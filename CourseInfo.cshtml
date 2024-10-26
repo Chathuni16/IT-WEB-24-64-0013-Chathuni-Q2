@@ -1,0 +1,13 @@
+﻿@page
+@model StudentsManagementApp.Pages.CourseInfoModel
+@{
+    ViewData["Title"] = "Course Info";
+}
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <h2>Add New Course</h2>
+    <form id="courseForm" runat="server">
+        <p>Course Name: <asp:TextBox ID="txtCourseName" runat="server"></asp:TextBox></p>
+        <p>Lecturer Name: <asp:TextBox ID="txtLecturerName" runat="server"></asp:TextBox></p>
+        <asp:Button ID="btnAddCourse" runat="server" Text="Add Course" OnClick="btnAddCourse_Click" />
+    </form>
+</asp:Content>
